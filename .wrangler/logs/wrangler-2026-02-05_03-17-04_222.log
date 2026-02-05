@@ -1,0 +1,164 @@
+
+--- 2026-02-05T03:17:04.305Z debug
+🪵  Writing logs to "/Users/finder/Downloads/po/.wrangler/logs/wrangler-2026-02-05_03-17-04_222.log"
+---
+
+--- 2026-02-05T03:17:04.305Z debug
+.env file not found at "/Users/finder/Downloads/po/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:17:04.305Z debug
+.env file not found at "/Users/finder/Downloads/po/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:17:04.310Z log
+
+ ⛅️ wrangler 4.62.0
+───────────────────
+---
+
+--- 2026-02-05T03:17:04.311Z log
+
+Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+---
+
+--- 2026-02-05T03:17:04.312Z debug
+Metrics dispatcher: Posting data {"deviceId":"1be073f7-728b-4e3e-8774-af437cd4594e","event":"wrangler command started","timestamp":1770261424312,"properties":{"amplitude_session_id":1770261424310,"amplitude_event_id":0,"wranglerVersion":"4.62.0","wranglerMajorVersion":4,"wranglerMinorVersion":62,"wranglerPatchVersion":0,"osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030","nodeVersion":23,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":["inspectorPort","ip","local","persistTo","port"],"argsCombination":"inspectorPort, ip, local, persistTo, port","agent":null,"sanitizedCommand":"dev","sanitizedArgs":{}}}
+---
+
+--- 2026-02-05T03:17:04.331Z debug
+setting config
+---
+
+--- 2026-02-05T03:17:04.331Z debug
+Updating config... undefined undefined
+---
+
+--- 2026-02-05T03:17:04.362Z debug
+local dev variables file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:17:04.362Z debug
+.env file not found at "/Users/finder/Downloads/po/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:17:04.362Z debug
+.env file not found at "/Users/finder/Downloads/po/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:17:04.363Z log
+Your Worker has access to the following bindings:
+---
+
+--- 2026-02-05T03:17:04.363Z log
+Binding                 Resource            Mode
+---
+
+--- 2026-02-05T03:17:04.363Z log
+env.ROOMS (RoomDO)      Durable Object      local
+---
+
+--- 2026-02-05T03:17:04.363Z log
+
+---
+
+--- 2026-02-05T03:17:04.393Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T03:17:04.393Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-05T03:17:04.393Z log
+⎔ Starting local server...
+---
+
+--- 2026-02-05T03:17:04.486Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-02-05T03:17:04.551Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-02-05T03:17:04.551Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"60062"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"60060","pathname":"/core:user:chip-holdem"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"33d3411f-3e80-4e96-9216-bf5674c92b3b"},"liveReload":false,"proxyLogsToController":false}}
+---
+
+--- 2026-02-05T03:17:04.552Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:60060/core:user:chip-holdem
+---
+
+--- 2026-02-05T03:17:04.553Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-02-05T03:17:04.554Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000001, result: {} }
+---
+
+--- 2026-02-05T03:17:04.554Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 346620161,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '3940074388285690710.2358350566041985139'
+    }
+  }
+}
+---
+
+--- 2026-02-05T03:17:04.554Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-02-05T03:17:04.555Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///Users/finder/Downloads/po/.wrangler/tmp/dev-4MbEoz/worker.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 974,
+    endColumn: 82,
+    executionContextId: 346620161,
+    hash: '9c9eba63db90a5261cbb0c9aa32f35babefa63152526f2a568c7367929fc15d0',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'worker.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 33619,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'worker.js'
+  }
+}
+---
+
+--- 2026-02-05T03:17:04.555Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000001}
+---
+
+--- 2026-02-05T03:17:04.555Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000002}
+---
+
+--- 2026-02-05T03:17:04.556Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000003}
+---
+
+--- 2026-02-05T03:17:04.557Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000002,
+  result: { debuggerId: '4959626101613443238.524406974083644045' }
+}
+---
+
+--- 2026-02-05T03:17:04.557Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000003, method: 'Network.enable', result: {} }
+---

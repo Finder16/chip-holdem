@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Game Room</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div class="room-layout">
+
+    <!-- TOP BAR -->
+    <header class="top-bar">
+      <div class="flex-row">
+        <a href="/" class="btn ghost" style="padding: 4px 8px;">← Exit</a>
+        <span id="roomBadge" class="badge">LOADING...</span>
+      </div>
+      <button id="copyInvite" class="btn primary" style="font-size: 12px; padding: 6px 12px;">Invite Link</button>
+    </header>
+
+    <!-- MAIN TABLE AREA -->
+    <main class="poker-table-wrap">
+      <div class="poker-table">
+        <div class="table-felt"></div>
+
+        <!-- Pot & Board -->
+        <div class="pot-container">
+          <div class="pot-label">Total Pot</div>
+          <div id="pot" class="pot-value">0</div>
+          <div class="pot-label mt-4" style="margin-top: 8px;">Current Bet: <span id="curBet"
+              class="text-white">0</span></div>
+        </div>
+
+        <div id="boardCards" class="board-cards"></div>
+
+        <div id="showdown" class="min-h-[20px] text-center text-xs mt-2 text-gold"></div>
+      </div>
+    </main>
+
+    <!-- OTHER PLAYERS (Visual List for now until we do seats) -->
+    <!-- We will render opponents here if not seated at table, or just use this container for all players -->
+    <div id="players" class="players-grid"></div>
+
+    <!-- EVENT FEED -->
+    <div id="event" class="text-center text-muted" style="font-size: 12px; margin-top: -10px;">Waiting for game...</div>
+
+    <!-- BOTTOM DOCK (Controls + My Hand) -->
+    <footer class="controls-dock">
+      <!-- My Hand -->
+      <div class="my-hand-area">
+        <div class="text-right">
+          <div id="you" class="font-bold">Player</div>
+          <div id="youChips" class="text-gold font-mono text-sm">Chips: ...</div>
+        </div>
+        <div id="youCards" class="my-cards">
+          <!-- Cards go here -->
+        </div>
+      </div>
+
+      <!-- Start Button (Host) -->
+      <div class="text-center">
+        <button id="startBtn" class="btn primary w-full" disabled style="max-width: 200px; display: none;">Start
+          Game</button>
+      </div>
+
+      <!-- Actions -->
+      <div class="action-bar">
+        <button id="foldBtn" class="btn danger" disabled>Fold</button>
+        <button id="checkBtn" class="btn" disabled>Check</button>
+        <button id="callBtn" class="btn" disabled>Call</button>
+
+        <div class="slider-group">
+          <input id="raiseTo" type="number" placeholder="Min" />
+          <button id="raiseBtn" class="btn primary" disabled>Raise</button>
+        </div>
+
+        <button id="allinBtn" class="btn primary" disabled style="background: var(--accent); color: #000;">All
+          In</button>
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="/room.js"></script>
+</body>
+
+</html>

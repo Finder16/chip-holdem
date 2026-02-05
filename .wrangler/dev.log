@@ -1,0 +1,78 @@
+
+> po@1.0.0 dev
+> WRANGLER_LOG_PATH=.wrangler/logs WRANGLER_CI_DISABLE_CONFIG_WATCHING=true wrangler dev --local --ip 127.0.0.1 --persist-to .wrangler/state --inspector-port 0 --port 8787
+
+
+ ⛅️ wrangler 4.62.0
+───────────────────
+Your Worker has access to the following bindings:
+Binding                 Resource            Mode
+env.ROOMS (RoomDO)      Durable Object      local
+
+⎔ Starting local server...
+[wrangler:info] Ready on http://127.0.0.1:8787
+[wrangler:info] GET /api/room/YKXJF/ws 101 Switching Protocols (16ms)
+[wrangler:info] GET / 304 Not Modified (8ms)
+[wrangler:info] GET /style.css 304 Not Modified (5ms)
+[wrangler:info] GET /main.js 304 Not Modified (6ms)
+[wrangler:info] GET / 304 Not Modified (5ms)
+[wrangler:info] GET /style.css 304 Not Modified (4ms)
+[wrangler:info] GET /main.js 304 Not Modified (5ms)
+[wrangler:info] GET / 304 Not Modified (9ms)
+[wrangler:info] GET /style.css 200 OK (8ms)
+[wrangler:info] GET /main.js 304 Not Modified (11ms)
+[wrangler:info] POST /api/create 200 OK (15ms)
+[wrangler:info] GET /room.html 307 Temporary Redirect (4ms)
+[wrangler:info] GET /room 200 OK (4ms)
+[wrangler:info] GET /style.css 304 Not Modified (2ms)
+[wrangler:info] GET /room.js 200 OK (4ms)
+[wrangler:info] GET /api/room/NE6HL/ws 101 Switching Protocols (3ms)
+[wrangler:info] GET /room.html 307 Temporary Redirect (3ms)
+[wrangler:info] GET /room 200 OK (6ms)
+[wrangler:info] GET /style.css 304 Not Modified (5ms)
+[wrangler:info] GET /room.js 304 Not Modified (5ms)
+[wrangler:info] GET /api/room/NE6HL/ws 101 Switching Protocols (5ms)
+⎔ Reloading local server...
+⎔ Local server updated and ready
+[wrangler:info] GET /api/room/NE6HL/ws 101 Switching Protocols (18ms)
+⎔ Reloading local server...
+⎔ Local server updated and ready
+[wrangler:info] GET /api/room/NE6HL/ws 101 Switching Protocols (20ms)
+[wrangler:info] GET /room 304 Not Modified (9ms)
+[wrangler:info] GET /style.css 200 OK (3ms)
+[wrangler:info] GET /room.js 304 Not Modified (5ms)
+[wrangler:info] GET /api/room/NE6HL/ws 101 Switching Protocols (8ms)
+⎔ Reloading local server...
+⎔ Local server updated and ready
+[wrangler:info] GET /api/room/NE6HL/ws 101 Switching Protocols (17ms)
+⎔ Reloading local server...
+⎔ Local server updated and ready
+[wrangler:info] GET /api/room/NE6HL/ws 101 Switching Protocols (18ms)
+⎔ Reloading local server...
+⎔ Local server updated and ready
+[wrangler:info] GET /api/room/NE6HL/ws 101 Switching Protocols (20ms)
+[wrangler:info] GET /room 200 OK (18ms)
+[wrangler:info] GET /style.css 200 OK (3ms)
+[wrangler:info] GET /room.js 200 OK (4ms)
+[wrangler:info] GET /api/room/NE6HL/ws 101 Switching Protocols (6ms)
+[wrangler:info] GET / 200 OK (6ms)
+[wrangler:info] GET /style.css 304 Not Modified (10ms)
+[wrangler:info] GET /main.js 304 Not Modified (10ms)
+[wrangler:info] POST /api/create 200 OK (18ms)
+[wrangler:info] GET /room.html 307 Temporary Redirect (6ms)
+[wrangler:info] GET /room 200 OK (5ms)
+[wrangler:info] GET /style.css 304 Not Modified (13ms)
+[wrangler:info] GET /room.js 304 Not Modified (6ms)
+[wrangler:info] GET /api/room/QXFRK/ws 101 Switching Protocols (3ms)
+[wrangler:info] GET / 200 OK (6ms)
+[wrangler:info] GET /style.css 200 OK (4ms)
+[wrangler:info] GET /main.js 304 Not Modified (6ms)
+[wrangler:info] GET /room.html 307 Temporary Redirect (7ms)
+[wrangler:info] GET /room 200 OK (4ms)
+[wrangler:info] GET /style.css 304 Not Modified (3ms)
+[wrangler:info] GET /room.js 200 OK (4ms)
+[wrangler:info] GET /api/room/QXFRK/ws 101 Switching Protocols (10ms)
+⎔ Reloading local server...
+⎔ Local server updated and ready
+⎔ Reloading local server...
+⎔ Local server updated and ready

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>POKER NIGHT</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="container wrap-center">
+      
+      <div class="text-center mb-8">
+        <div class="logo">♠️</div>
+        <h1 class="text-gradient" style="font-size: 3rem; line-height: 1.1;">POKER<br>NIGHT</h1>
+        <p class="mt-4">Private Texas Hold'em for Friends</p>
+      </div>
+
+      <div class="flex-col">
+        <!-- Create Room -->
+        <section class="card-glass">
+          <h2 class="mb-8">Create Table</h2>
+          <form id="createForm" class="flex-col">
+            <div>
+              <label class="label">Your Name</label>
+              <input id="createNick" class="input-field" autocomplete="nickname" maxlength="12" placeholder="e.g. Daniel" required />
+            </div>
+            
+            <div class="grid-2">
+              <div>
+                <label class="label">Players</label>
+                <input id="maxPlayers" class="input-field" type="number" min="2" max="8" value="8" required />
+              </div>
+              <div>
+                <label class="label">Chips</label>
+                <input class="input-field" value="10k" disabled style="opacity: 0.6" />
+              </div>
+            </div>
+
+            <details style="font-size: 14px; color: var(--text-muted); cursor: pointer;">
+              <summary>Advanced Options</summary>
+              <div class="grid-2 mt-4">
+                <div>
+                  <label class="label">Small Blind</label>
+                  <input id="sb" class="input-field" type="number" min="1" value="50" required />
+                </div>
+                <div>
+                  <label class="label">Big Blind</label>
+                  <input id="bb" class="input-field" type="number" min="2" value="100" required />
+                </div>
+              </div>
+            </details>
+
+            <button class="btn primary w-full mt-4" type="submit">
+              Start Game
+            </button>
+          </form>
+        </section>
+
+        <!-- Join Room -->
+        <section class="card-glass">
+          <h2 class="mb-8">Join Table</h2>
+          <form id="joinForm" class="flex-col">
+            <div class="grid-2">
+              <div>
+                <label class="label">Room Code</label>
+                <input id="joinCode" class="input-field" maxlength="10" placeholder="A1B2C" style="text-transform: uppercase;" required />
+              </div>
+              <div>
+                <label class="label">Your Name</label>
+                <input id="joinNick" class="input-field" autocomplete="nickname" maxlength="12" placeholder="e.g. Sarah" required />
+              </div>
+            </div>
+            <button class="btn w-full mt-4" type="submit">
+              Join Game
+            </button>
+          </form>
+        </section>
+      </div>
+
+      <footer class="text-center mt-4">
+        <p style="font-size: 12px; opacity: 0.4;">No real money involved. Purely for fun.</p>
+      </footer>
+
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

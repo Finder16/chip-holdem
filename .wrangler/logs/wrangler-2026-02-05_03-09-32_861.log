@@ -1,0 +1,73 @@
+
+--- 2026-02-05T03:09:32.940Z debug
+🪵  Writing logs to "/Users/finder/Downloads/po/.wrangler/logs/wrangler-2026-02-05_03-09-32_861.log"
+---
+
+--- 2026-02-05T03:09:32.940Z debug
+.env file not found at "/Users/finder/Downloads/po/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:09:32.940Z debug
+.env file not found at "/Users/finder/Downloads/po/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:09:32.956Z log
+
+ ⛅️ wrangler 4.62.0
+───────────────────
+---
+
+--- 2026-02-05T03:09:32.969Z debug
+Error sending metrics event Error: EPERM: operation not permitted, mkdir '/Users/finder/Library/Preferences/.wrangler'
+    at Object.mkdirSync (node:fs:1361:26)
+    at writeMetricsConfig (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:157346:8)
+    at getDeviceId (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:157381:5)
+    at getMetricsConfig (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:157314:20)
+    at dispatch (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:157493:27)
+    at Object.sendCommandEvent (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:157480:9)
+    at /Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:168783:20
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_hooks:91:14)
+    at run (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:50461:61)
+    at Object.handler (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:168742:13) {
+  errno: -1,
+  code: 'EPERM',
+  syscall: 'mkdir',
+  path: '/Users/finder/Library/Preferences/.wrangler'
+}
+---
+
+--- 2026-02-05T03:09:32.974Z debug
+setting config
+---
+
+--- 2026-02-05T03:09:32.974Z debug
+Updating config... undefined undefined
+---
+
+--- 2026-02-05T03:09:33.004Z debug
+local dev variables file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:09:33.004Z debug
+.env file not found at "/Users/finder/Downloads/po/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:09:33.004Z debug
+.env file not found at "/Users/finder/Downloads/po/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:09:33.004Z log
+Your Worker has access to the following bindings:
+---
+
+--- 2026-02-05T03:09:33.004Z log
+Binding                 Resource            Mode
+---
+
+--- 2026-02-05T03:09:33.005Z log
+env.ROOMS (RoomDO)      Durable Object      local
+---
+
+--- 2026-02-05T03:09:33.005Z log
+
+---

@@ -1,0 +1,136 @@
+
+--- 2026-02-05T03:36:49.494Z debug
+🪵  Writing logs to "/Users/finder/Downloads/po/.wrangler/logs/wrangler-2026-02-05_03-36-49_399.log"
+---
+
+--- 2026-02-05T03:36:49.494Z debug
+.env file not found at "/Users/finder/Downloads/po/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:36:49.495Z debug
+.env file not found at "/Users/finder/Downloads/po/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:36:49.499Z log
+
+ ⛅️ wrangler 4.62.0
+───────────────────
+---
+
+--- 2026-02-05T03:36:49.502Z debug
+Metrics dispatcher: Posting data {"deviceId":"1be073f7-728b-4e3e-8774-af437cd4594e","event":"wrangler command started","timestamp":1770262609502,"properties":{"amplitude_session_id":1770262609500,"amplitude_event_id":0,"wranglerVersion":"4.62.0","wranglerMajorVersion":4,"wranglerMinorVersion":62,"wranglerPatchVersion":0,"osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030","nodeVersion":23,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["inspectorPort","ip","local","persistTo"],"argsCombination":"inspectorPort, ip, local, persistTo","agent":null,"sanitizedCommand":"dev","sanitizedArgs":{}}}
+---
+
+--- 2026-02-05T03:36:49.520Z debug
+setting config
+---
+
+--- 2026-02-05T03:36:49.521Z debug
+Updating config... undefined undefined
+---
+
+--- 2026-02-05T03:36:49.532Z debug
+local dev variables file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:36:49.532Z debug
+.env file not found at "/Users/finder/Downloads/po/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:36:49.532Z debug
+.env file not found at "/Users/finder/Downloads/po/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-02-05T03:36:49.533Z log
+Your Worker has access to the following bindings:
+---
+
+--- 2026-02-05T03:36:49.533Z log
+Binding      Resource          Mode
+---
+
+--- 2026-02-05T03:36:49.533Z log
+env.ROOMS    Durable Object    local
+  RoomDO
+---
+
+--- 2026-02-05T03:36:49.533Z log
+
+---
+
+--- 2026-02-05T03:36:49.564Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-02-05T03:36:49.564Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-02-05T03:36:49.565Z log
+⎔ Starting local server...
+---
+
+--- 2026-02-05T03:36:49.596Z log
+*** Fatal uncaught kj::Exception: kj/async-io-unix.c++:945: failed: ::bind(sockfd, &addr.generic, addrlen): Address already in use; toString() = 127.0.0.1:8787
+---
+
+--- 2026-02-05T03:36:49.597Z debug
+Error in undefined: undefined
+ undefined
+---
+
+--- 2026-02-05T03:36:49.597Z debug
+=> Error contextual data: undefined
+---
+
+--- 2026-02-05T03:36:49.611Z debug
+Error in undefined: undefined
+ undefined
+---
+
+--- 2026-02-05T03:36:49.611Z debug
+=> Error contextual data: undefined
+---
+
+--- 2026-02-05T03:36:49.611Z debug
+Metrics dispatcher: Posting data {"deviceId":"1be073f7-728b-4e3e-8774-af437cd4594e","event":"wrangler command errored","timestamp":1770262609611,"properties":{"amplitude_session_id":1770262609500,"amplitude_event_id":1,"wranglerVersion":"4.62.0","wranglerMajorVersion":4,"wranglerMinorVersion":62,"wranglerPatchVersion":0,"osPlatform":"Mac OS","osVersion":"Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:45 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T6030","nodeVersion":23,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["inspectorPort","ip","local","persistTo"],"argsCombination":"inspectorPort, ip, local, persistTo","agent":null,"sanitizedCommand":"dev","sanitizedArgs":{},"durationMs":116,"errorType":"UserError"}}
+---
+
+--- 2026-02-05T03:36:49.612Z log
+
+---
+
+--- 2026-02-05T03:36:49.635Z error
+✘ [ERROR] Address already in use (127.0.0.1:8787). Please check that you are not already running a server on this address or specify a different port with --port.
+
+
+---
+
+--- 2026-02-05T03:36:49.635Z debug
+Error: Address already in use (127.0.0.1:8787). Please check that you are not already running a server on this address or specify a different port with --port.
+    at exports.unstable_DevEnv.handleErrorEvent (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:293024:30)
+    at exports.unstable_DevEnv.dispatch (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:292983:18)
+    at ProxyController.emitErrorEvent (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:51871:18)
+    at ProxyController.emitErrorEvent (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:292123:15)
+    at ProxyController.reconnectInspectorProxyWorker (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:291871:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ProxyController.sendMessageToInspectorProxyWorker (/Users/finder/Downloads/po/node_modules/wrangler/wrangler-dist/cli.js:291939:29)
+---
+
+--- 2026-02-05T03:36:49.636Z debug
+Error in undefined: undefined
+ undefined
+---
+
+--- 2026-02-05T03:36:49.636Z debug
+=> Error contextual data: undefined
+---
+
+--- 2026-02-05T03:36:49.724Z debug
+Error in undefined: undefined
+ undefined
+---
+
+--- 2026-02-05T03:36:49.724Z debug
+=> Error contextual data: undefined
+---

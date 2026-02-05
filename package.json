@@ -1,0 +1,26 @@
+{
+  "name": "chip-holdem",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/worker.ts",
+  "scripts": {
+    "dev": "WRANGLER_LOG_PATH=.wrangler/logs WRANGLER_CI_DISABLE_CONFIG_WATCHING=true wrangler dev --local --ip 127.0.0.1 --persist-to .wrangler/state --inspector-port 0",
+    "deploy": "wrangler deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Finder16/po.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Finder16/po/issues"
+  },
+  "homepage": "https://github.com/Finder16/po#readme",
+  "description": "Chip-only Texas Hold'em for friends (Cloudflare Workers + Durable Objects)",
+  "devDependencies": {
+    "wrangler": "^4.62.0"
+  }
+}
